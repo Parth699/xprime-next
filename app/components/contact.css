@@ -1,0 +1,336 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	Aashi Faucets - Html5 Template For Faucets, Sanitary, Bathroom, Kitchen and Multipurpose E-commerce Store
+Version:	1.0.0
+Assigned to:	Themeforest
+Primary use:	Faucets, Sanitary, Tap shop, Bathroom & Kitchen Accessories, Responsive, Html5, E-commerce Store
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Table of contents]
+
+1 Body / body
+2 Common Css
+   2.1 Reset Style / img
+   2.2 Form Elements / input
+   2.3 Blockquote / blockquote
+   2.4 Button Style / .theme-button
+   2.5 Padding / .pad0
+   2.6 Margin / .mar0
+3 Header Style / #main-header
+   3.1 Top Header / #top-bar
+   3.2 Navigation Bar / .wa-main-menu
+4 Main Slider / .wa_main_bn_wrap
+5 Heading Style / .centered-title
+6 Collections / .collection-section
+7 Product Grid / .wa-products
+8 Banners / .banners-section
+9 Blogs / .blogs_main
+10 Partner / .wa-partners
+11 Newsletter / .wa-news-letter
+12 Services / .services
+13 Background Image / .special-style
+14 Product Sorting / .product-sorting
+15 Other Pages Section
+	15.1 Page Header / .page-header
+	15.2 Cart Page / .cart-page
+	15.3 Checkout Page / .checkout-page
+	15.4 FAQs / .faqs-accordion
+	15.5 Pagination / .styled-pagination
+	15.6 Comment Area / .reviews-container
+16 Sidebar / .sidebar
+17 Extra Styles / .ratings
+18 Preloader / .preloader
+19 Owl Carousel Style
+	19.1 Carousel Styles1 / .carousel-style-1
+	19.2 Carousel Styles2 / .carousel-style-2
+20 Popups / .popup-inner
+21 Footer / #main-footer
+
+-------------------------------------------------------------------*/
+
+/* Fonts include */
+
+
+/*Defaults CSS SETTINGS */	
+/* @import url("style.css"); */
+
+/*Template Media Query CSS */
+/* @import url("responsive.css"); */
+
+/* sticky header start */
+
+.panel-title a:after {
+    font-family:Fontawesome;
+    content:'\f077';
+    float:right;
+    font-size:10px;
+    font-weight:300;
+}
+.panel-title a.collapsed:after {
+    font-family:Fontawesome;
+    content:'\f078';
+}
+
+.accordion-body{
+   color:black;
+}
+
+.collapse{
+   display: flex;
+   padding: 20px;
+}
+
+
+#main-menu.small {
+   position:fixed;
+   border-bottom: 1px solid #474747;
+   left:0;
+   top:0;
+   z-index: 9999;
+   float:left;
+   width:100%;
+   -ms-transition:     all 0.7s ease-out;
+   -moz-transition:    all 0.7s ease-out;
+   -webkit-transition: all 0.7s ease-out;
+   -o-transition:      all 0.7s ease-out;
+   transition:         all 0.7s ease-out;
+}
+#main-menu .scroll-show, 
+#main-menu.small .scroll-hide {
+   display: none;
+}
+
+#main-menu.small .scroll-show,
+#main-menu .scroll-hide {
+   display: block;
+}
+
+.scroll-hide .search input {
+   border: none;
+   color: #FFF;
+   background: transparent;
+   margin: 0px;
+}
+
+.scroll-hide .search form {
+   display: flex;
+   align-items: center;
+   padding-right: 15px;
+   cursor: pointer;
+}
+
+.scroll-hide .search button {
+   background: transparent;
+   margin: 0;
+   padding: 0;
+   cursor: pointer;
+   color: #FFF;
+   border: none;
+}
+
+.scroll-hide .search {
+   border: 1px solid #FFF;
+   margin-top: 6px;
+}
+
+.navbar-default {
+   padding: 20px 0px;
+}
+
+.menu-icons {
+   padding: 12px 0px 0px;
+}
+
+.menu-icons a {
+   padding: 0 10px;
+   color: #FFF;
+   font-size: 20px;
+}
+
+.navbar-default .navbar-brand {
+   padding: 0px !important;
+}
+
+@media only screen and (min-width: 992px) {
+   .navbar-nav > li > a {
+       padding: 16px 10px;
+   }
+}
+/* sticky header end */
+
+.floating {
+   position:fixed;
+   width:60px;
+   height:60px;
+   bottom: 10px;
+   right: 25px;
+   background-color:#25d366;
+   color:#FFF;
+   border-radius:50px;
+   text-align:center;
+   font-size:30px;
+   box-shadow: 2px 2px 3px #999;
+   z-index:100;
+}
+
+.float-button {
+   margin-top:16px;
+}
+
+@media only screen and (max-width: 480px) {
+   .floating {
+       right: 10px;
+   }
+}
+
+.footer-socials a {
+   color: #000;
+}
+
+.footer-socials a i {
+   background: #FFF;
+    margin: 10px 10px;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 0.5s;
+    border: 1px solid transparent;
+}
+
+.footer-socials a i:hover {
+   background: transparent;
+   border: 1px solid #FFF;
+   color: #FFF;
+}
+
+/* product sidebar */
+.sidebar-links {
+    list-style: none;
+    padding: 0;
+    height: 350px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.sidebar-links li {
+    padding: 2px;
+    border-bottom: 1px solid #000;
+}
+.sidebar-links li a {
+    color: #000;
+}
+
+/* width */
+::-webkit-scrollbar {
+   width: 6px;
+ }
+
+ /* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   background: #555; 
+ }
+
+.panel-heading {
+   padding: 0;
+   border:0;
+}
+
+.panel-title>a, .panel-title>a:active{
+   display:block;
+   padding: 8px 15px 8px 15px;
+   color:#555;
+   font-size:16px;
+   font-weight:bold;
+    text-transform:uppercase;
+    letter-spacing:1px;
+   word-spacing:3px;
+    text-decoration:none;
+ }
+
+ .panel-heading.active a:before {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+ } 
+
+.panel-heading a:before {
+   content: "\f063";
+   float: right;
+   transition: all 0.5s;
+       margin-top: 6px;
+   font: normal normal normal 14px/1 FontAwesome !important;
+   font-size: inherit;
+   text-rendering: auto;
+   -webkit-font-smoothing: antialiased;
+}
+
+.our_services_main {
+   float: left;
+   width: 100%;
+   margin: 20px 0;
+}
+
+.services-box {
+    padding: 20px;
+}
+   
+.services-border-right {
+   border-right: 1px solid #e2e2ee;
+}
+
+.services-box .services-icons {
+   margin-bottom: 20px;
+}
+
+.services-box a {
+   color: #000;
+   font-size: 18px;
+}
+
+.services-box a:after{
+   content: "";
+   display: block;
+   width: 15%;
+   height: 2px;
+   background: #000;
+   transition: width 0.3s;
+   margin-top: 5px;
+}
+
+.services-box a:hover::after {
+   width: 35%;
+}
+
+.services-box p i {
+   font-size: 40px;
+}
+
+.services-box .services-icons {
+   margin-bottom: 15px;
+}
+
+.services-box .services-description {
+   margin-top: 15px;
+   height: 80px;
+   line-height: 22px;
+}
+
+.caret.menu-arrow {
+    padding-left: 6px;
+}
+
+.pt-15{
+    padding-top: 15px;
+}
+
+.banners-section > div > div > div:nth-child(1) > div > div a .wa-banners {
+    padding-right: 10px;
+}

@@ -1,0 +1,22 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+    font-family: 'Masoneitalic'; /* Choose a name for your font */
+    src: url("./Masone_Italic.otf") format('opentype');
+    /* You can also specify other font formats like woff or woff2 for better compatibility */
+  }
+@font-face {
+    font-family: 'Masone'; /* Choose a name for your font */
+    src: url("./Masone.otf") format('opentype');
+    /* You can also specify other font formats like woff or woff2 for better compatibility */
+  }
+  
+  .font-Masoneitalic {
+    font-family: 'Masoneitalic', sans-serif;
+  }
+  .font-Masone {
+    font-family: 'Masone', sans-serif;
+  }
+  
